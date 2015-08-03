@@ -4,6 +4,7 @@ from flask.ext.script import Manager
 from alembic import __version__ as __alembic_version__
 from alembic.config import Config as AlembicConfig
 from alembic import command
+from ibm_db_alembic.ibm_db import IbmDbImpl
 
 
 alembic_version = tuple([int(v) for v in __alembic_version__.split('.')[0:3]])

@@ -1,16 +1,18 @@
 """
-Flask-Migrate
+Flask-Migrate-DB2
 --------------
 
 SQLAlchemy database migrations for Flask applications using Alembic.
+
+Adapted to allow the use of IBM DB2.
 """
 from setuptools import setup
 
 
 setup(
     name='Flask-Migrate',
-    version='1.5.0',
-    url='http://github.com/miguelgrinberg/flask-migrate/',
+    version='1.5.2',
+    url='http://github.com/FvD/flask-migrate/',
     license='MIT',
     author='Miguel Grinberg',
     author_email='miguelgrinberg50@gmail.com',
@@ -25,7 +27,10 @@ setup(
         'Flask>=0.9',
         'Flask-SQLAlchemy>=1.0',
         'alembic>=0.6',
-        'Flask-Script>=0.6'
+        'Flask-Script>=0.6',
+        'ibm-db>=2.0.5',
+        'ibm-db-sa>=0.3.2',
+        'ibm-db-alembic'
     ],
     test_suite="tests",
     classifiers=[
